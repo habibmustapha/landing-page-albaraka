@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Cotton Tees",
+    "price": "2000 DA",
+    "description": "Soft, breathable cotton t-shirts in vibrant colors. Perfect for everyday play and comfort.",
+    "images": ["/IMG_5415.JPG", "/IMG_5416.JPG", "/IMG_5417.JPG"],
+    "emoji": "/IMG_5415.JPG"
+  },
+  {
+    "id": 2,
+    "name": "Princess Dresses",
+    "price": "$34.99",
+    "description": "Twirl-worthy dresses that make every day magical.",
+    "images": ["👗", "✨", "👑"],
+    "emoji": "👗"
+  },
+  {
+    "id": 3,
+    "name": "Adventure Pants",
+    "price": "$24.99",
+    "description": "Durable and flexible pants for active kids.",
+    "images": ["👖", "🏃", "⛰️"],
+    "emoji": "👖"
+  },
+  {
+    "id": 4,
+    "name": "Cozy Hoodies",
+    "price": "$29.99",
+    "description": "Ultra-soft hoodies perfect for chilly days.",
+    "images": ["🧥", "🌟", "❄️"],
+    "emoji": "🧥"
+  },
+  {
+    "id": 5,
+    "name": "Summer Shorts",
+    "price": "$16.99",
+    "description": "Lightweight and breathable shorts for hot summer days.",
+    "images": ["🩳", "☀️", "🏖️"],
+    "emoji": "🩳"
+  },
+  {
+    "id": 6,
+    "name": "Smart Outfits",
+    "price": "$44.99",
+    "description": "Elegant sets for special occasions.",
+    "images": ["👔", "🎩", "🎉"],
+    "emoji": "👔"
+  }
+]
