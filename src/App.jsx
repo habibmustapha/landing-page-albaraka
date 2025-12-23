@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, ShoppingCart, Home, Instagram, Facebook } fr
 import img5415 from "./assets/IMG_5415.JPG";
 import img5416 from "./assets/IMG_5416.JPG";
 import img5417 from "./assets/IMG_5417.JPG";
-import logo from "./assets/logo.png";
+import logo from "/logo.png";
 
 const products = [
   {
