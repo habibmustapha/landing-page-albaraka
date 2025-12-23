@@ -106,9 +106,6 @@ function App() {
               <span className="text-2xl font-bold">البركة للأطفال</span>
             </button>
             <div className="flex items-center gap-6">
-              <button onClick={navigateToHome} className="text-white hover:opacity-80 transition-opacity hidden sm:block font-semibold">
-                المنتجات
-              </button>
               <button onClick={navigateToHome} className="flex items-center gap-3 text-white hover:opacity-80 transition-opacity">
               <img src={logo} alt="El Baraka Logo" className="h-12 w-12 " />
             </button>
