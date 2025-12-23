@@ -74,7 +74,7 @@ const products = [
     name: "صنادل صيفية",
     price: "2200 دج",
     description: "صنادل خفيفة ومريحة لأيام الصيف. تصميم عملي مع أحزمة قابلة للتعديل وحماية للأصابع. مثالية للشاطئ والحدائق والنزهات العائلية.",
-    images: ["🩴", "🌊", "☀️"],
+    images: [img5415, "🌊", "☀️"],
     emoji: "🩴",
     sizeType: "shoe"
   }
@@ -99,7 +99,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-gradient-to-r from-pink-400 to-orange-400 shadow-lg">
+      <nav className="sticky top-0 z-50 bg-linear-to-r from-pink-400 to-orange-400 shadow-lg">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <button onClick={navigateToHome} className="flex items-center gap-3 text-white hover:opacity-80 transition-opacity">
@@ -135,7 +135,7 @@ function HomePage({ navigateToProduct }) {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-pink-50 to-orange-50 py-16 px-6 text-center">
+      <div className="bg-linear-to-r from-pink-50 to-orange-50 py-16 px-6 text-center">
         <h1 className="text-5xl font-bold text-pink-500 mb-4">أزياء رائعة للصغار</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">ملابس أطفال عالية الجودة مريحة وأنيقة وصنعت بكل حب ✨</p>
       </div>
@@ -146,7 +146,7 @@ function HomePage({ navigateToProduct }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map(product => (
             <div key={product.id} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer" onClick={() => navigateToProduct(product)}>
-              <div className="h-64 bg-gradient-to-br from-pink-200 to-orange-200 flex items-center justify-center text-9xl relative">
+              <div className="h-64 bg-linear-to-br from-pink-200 to-orange-200 flex items-center justify-center text-9xl relative">
                 {product.emoji}
                 <div className="absolute top-4 left-4 text-3xl animate-pulse">✨</div>
               </div>
@@ -155,7 +155,7 @@ function HomePage({ navigateToProduct }) {
                 <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold text-pink-500">{product.price}</span>
-                  <button className="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all">
+                  <button className="bg-linear-to-r from-pink-500 to-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all">
                     عرض التفاصيل
                   </button>
                 </div>
@@ -166,11 +166,11 @@ function HomePage({ navigateToProduct }) {
       </div>
 
       {/* Social Media Section */}
-      <div className="bg-gradient-to-r from-purple-600 to-indigo-600 py-16 px-6 text-center text-white">
+      <div className="bg-linear-to-r from-purple-600 to-indigo-600 py-16 px-6 text-center text-white">
         <h2 className="text-4xl font-bold mb-4">تابعونا على وسائل التواصل الاجتماعي! 🌟</h2>
         <p className="text-xl mb-10 opacity-90">انضموا إلى مجتمعنا للحصول على الإلهام اليومي ونصائح التنسيق والعروض الحصرية</p>
         <div className="flex justify-center gap-6 flex-wrap">
-          <a href="https://www.instagram.com/elbaraka__tiaret" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-gradient-to-r from-pink-500 to-orange-500 bg-opacity-20 backdrop-blur-lg px-8 py-4 rounded-full hover:bg-opacity-30 transition-all hover:-translate-y-1">
+          <a href="https://www.instagram.com/elbaraka__tiaret" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-linear-to-r from-pink-500 to-orange-500 bg-opacity-20 backdrop-blur-lg px-8 py-4 rounded-full hover:bg-opacity-30 transition-all hover:-translate-y-1">
             <Instagram size={28} />
             <span className="font-semibold text-lg">إنستغرام</span>
           </a>
@@ -275,7 +275,7 @@ function ProductPage({ product, navigateToHome }) {
       <div className="grid md:grid-cols-2 gap-12">
         {/* Image Slider */}
         <div>
-          <div className="bg-gradient-to-br from-pink-200 to-orange-200 rounded-3xl shadow-xl overflow-hidden">
+          <div className="bg-linear-to-br from-pink-200 to-orange-200 rounded-3xl shadow-xl overflow-hidden">
             <div className="relative h-96 flex items-center justify-center text-9xl">
               {product.images[currentImageIndex]}
               
@@ -438,7 +438,7 @@ function ProductPage({ product, navigateToHome }) {
             <button 
               onClick={handleSubmit}
               disabled={isSubmitting} 
-              className="w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed hover:-translate-y-1"
+              className="w-full bg-linear-to-r from-pink-500 to-orange-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed hover:-translate-y-1"
             >
               {isSubmitting ? 'جاري إرسال الطلب... ⏳' : 'إرسال الطلب 🎉'}
             </button>
